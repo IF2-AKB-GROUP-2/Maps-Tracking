@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "396616553045",
+    "firebase_url": "https://live-tracking-maps-fe6ce-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "live-tracking-maps-fe6ce",
+    "storage_bucket": "live-tracking-maps-fe6ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396616553045:android:454379988edc37d8fd7adc",
+        "android_client_info": {
+          "package_name": "com.rizki.livetrackingmaps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396616553045-56ons4g5qtt40nc1d0t7l3aoen3vr1it.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjvd8-0MfTym9Y3pmFAkTWZ0zoecSSLP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "396616553045-56ons4g5qtt40nc1d0t7l3aoen3vr1it.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
