@@ -41,7 +41,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         setContentView(binding.getRoot());
 
         manager = (LocationManager) getSystemService(LOCATION_SERVICE);
-        reference = FirebaseDatabase.getInstance().getReference().child("User-101");
+        reference = FirebaseDatabase.getInstance().getReference().child("Maps");
         //FirebaseDatabase.getInstance().getReference().setValue("This is tracker app");
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -94,11 +94,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-6.839608884201539, 107.6052857179903);
+        LatLng lokasiku = new LatLng(-6.839608884201539, 107.6052857179903);
+        LatLng wisata1 = new LatLng(-6.833047981365829, 107.60561271093461);
+        LatLng wisata2 = new LatLng(-6.848631426564443, 107.62595848133417);
+        LatLng wisata3 = new LatLng(-6.843667437340559, 107.62429282954626);
+        LatLng wisata4 = new LatLng(-6.841345966300139, 107.62287263311094);
         googleMap.setMapType(googleMap.MAP_TYPE_HYBRID);
-        MarkerOptions options = new MarkerOptions().position(sydney).title("Lokasi Saat Ini");
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(sydney,17));
+        MarkerOptions options = new MarkerOptions().position(lokasiku).title("Lokasi Saat Ini");
+        googleMap.addMarker(new MarkerOptions().position(wisata1).title("FarmHouse"));
+        googleMap.addMarker(new MarkerOptions().position(wisata2).title("Dago Dream Park"));
+        googleMap.addMarker(new MarkerOptions().position(wisata3).title("Sarae Hills"));
+        googleMap.addMarker(new MarkerOptions().position(wisata4).title("D`Dieulands"));
+        mMap.addMarker(new MarkerOptions().position(lokasiku).title("Marker in Lembang"));
+        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(lokasiku,17));
         googleMap.addMarker(options);
     }
 
@@ -129,4 +137,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onProviderDisabled(String provider){
 
     }
+
+
 }
